@@ -4,14 +4,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by manana on 27/5/16.
+ * Created by Omicrono on 27/5/16.
  */
 public class ServicioPizzas {
 
-    public static List<Pizzas> addPizzas() {
+    public static List<Pizzas> consultaPizzas() {
 
         float precio;
-        int tamaño;
+        int tamaño; // 0 = pequeña, 1 = mediana, 2 = familiar
         String nombre;
         LinkedList<Pizzas> pizzas = new LinkedList<>();
         LinkedList<String> ingredientes = new LinkedList<>();
