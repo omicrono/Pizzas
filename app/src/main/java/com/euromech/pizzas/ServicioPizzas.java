@@ -17,8 +17,8 @@ public class ServicioPizzas {
         LinkedList<String> ingredientes = new LinkedList<>();
 
         nombre = "Barbacoa Jamón";
-        ingredientes.add("Cebolla");
         ingredientes.add("Jamón");
+        ingredientes.add("Mozzarela");
         ingredientes.add("Barbacoa");
         precio = 7;
         tamaño = 1;
@@ -27,9 +27,10 @@ public class ServicioPizzas {
         ingredientes = new LinkedList<>();
         nombre = "Champi Queso";
         ingredientes.add("Cheddar");
+        ingredientes.add("Mozzarela");
         ingredientes.add("Jamón");
         ingredientes.add("Champiñon");
-        precio = 7;
+        precio = 9;
         tamaño = 0;
         pizzas.add(new Pizzas(nombre,ingredientes,precio,tamaño));
 
@@ -52,7 +53,7 @@ public class ServicioPizzas {
         ingredientes.add("Jamón");
         ingredientes.add("Tomate cherry");
         ingredientes.add("Salsa hawaiana");
-        precio = 8;
+        precio = 10;
         tamaño = 1;
         pizzas.add(new Pizzas(nombre,ingredientes,precio,tamaño));
 

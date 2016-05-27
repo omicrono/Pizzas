@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Created by manana on 27/5/16.
+ * Created by Omicrono on 27/5/16.
  */
 public class Pizzas implements Serializable {
 
