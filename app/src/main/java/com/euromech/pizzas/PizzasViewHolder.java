@@ -26,8 +26,22 @@ public class PizzasViewHolder {
         this.item = item;
         tvNombre.setText(item.getNombre());
         tvIngrediente.setText(item.getIngredientes().toString());
-        tvPrecio.setText(String.valueOf(item.getPrecio()));
-        tvTamaño.setText(String.valueOf(item.getTamaño()));
+        tvPrecio.setText("Precio: "+String.valueOf(item.getPrecio())+"€");
+        switch (item.getTamaño())
+        {
+            case 0:
+                tvTamaño.setText("Pequeña");
+                break;
+            case 1:
+                tvTamaño.setText("Mediana");
+                break;
+            case 2:
+                tvTamaño.setText("Familiar");
+                break;
+            default:
+                tvTamaño.setText("No disponible");
+                break;
+        }
     }
 
     public TextView getTvNombre() {

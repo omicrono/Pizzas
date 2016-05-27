@@ -30,7 +30,7 @@ public class ServicioPizzas {
         ingredientes.add("Jamón");
         ingredientes.add("Champiñon");
         precio = 7;
-        tamaño = 1;
+        tamaño = 0;
         pizzas.add(new Pizzas(nombre,ingredientes,precio,tamaño));
 
         ingredientes = new LinkedList<>();
@@ -42,7 +42,7 @@ public class ServicioPizzas {
         ingredientes.add("Ternera");
         ingredientes.add("Barbacoa");
         precio = 12;
-        tamaño = 1;
+        tamaño = 2;
         pizzas.add(new Pizzas(nombre,ingredientes,precio,tamaño));
 
         ingredientes = new LinkedList<>();
