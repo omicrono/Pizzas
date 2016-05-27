@@ -24,7 +24,7 @@ public class PizzasViewHolder {
 
     public void bindItem(Pizzas item) {
         this.item = item;
-        tvNombre.setText(item.getNombre());
+        tvNombre.setText("PIZZA: "+item.getNombre());
         tvIngrediente.setText(item.getIngredientes().toString());
         tvPrecio.setText("Precio: "+String.valueOf(item.getPrecio())+"€");
         switch (item.getTamaño())
