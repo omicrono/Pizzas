@@ -26,8 +26,8 @@ public class PizzasViewHolder {
         this.item = item;
         tvNombre.setText(item.getNombre());
         tvIngrediente.setText(item.getIngredientes().toString());
-        tvPrecio.setText((int) item.getPrecio());
-        tvTamaño.setText((int) item.getPrecio());
+        tvPrecio.setText(String.valueOf(item.getPrecio()));
+        tvTamaño.setText(String.valueOf(item.getTamaño()));
     }
 
     public TextView getTvNombre() {
