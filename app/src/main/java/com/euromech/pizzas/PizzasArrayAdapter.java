@@ -46,8 +46,16 @@ public class PizzasArrayAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.pizzas_list_items, parent, false);
 
             TextView tvNombre = (TextView) convertView.findViewById(R.id.tvNombre);
+            TextView tvIngredientes = (TextView) convertView.findViewById(R.id.tvIngredientes);
+            TextView tvPrecio = (TextView) convertView.findViewById(R.id.tvPrecio);
+            TextView tvTamaño = (TextView) convertView.findViewById(R.id.tvTamaño);
+
+            PizzasViewHolder pizzasViewHolder = new PizzasViewHolder(tvNombre, tvIngredientes, tvPrecio, tvTamaño, pizzas);
+            convertView.setTag(pizzasViewHolder);
+        } else {
+            ((PizzasViewHolder)convertView.getTag()).bindItem(pizzas);
         }
 
-        return null;
+        return convertView;
     }
 }

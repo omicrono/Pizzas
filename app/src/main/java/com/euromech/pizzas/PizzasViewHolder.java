@@ -22,7 +22,7 @@ public class PizzasViewHolder {
         bindItem(item);
     }
 
-    private void bindItem(Pizzas item) {
+    public void bindItem(Pizzas item) {
         this.item = item;
         tvNombre.setText(item.getNombre());
         tvIngrediente.setText(item.getIngredientes().toString());
