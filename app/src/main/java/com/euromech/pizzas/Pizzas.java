@@ -21,6 +21,7 @@ public class Pizzas implements Serializable {
         this.tamaño = tamaño;
     }
 
+
     public String getNombre() {
         return nombre;
     }
